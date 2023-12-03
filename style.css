@@ -1,0 +1,199 @@
+body {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+#app {
+	text-align: center;
+}
+
+#app-split-h {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+#app-split-v {
+	display: grid;
+}
+
+.centered {
+	text-align: center;
+}
+
+.pseudo-th {
+	font-weight: bold;
+}
+
+#settings {
+	margin: auto;
+	border: 3px solid black;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+#settings th {
+	border: 3px solid black;
+	background-color: lightgrey;
+}
+
+#settings td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.palette-view {
+	margin: auto;
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+
+.palette-view th {
+	border: 2px solid black;
+	background-color: lightgrey;
+}
+
+.palette-view td {
+	border: 1px solid black;
+	background-color: transparent;
+	width: 24px;
+	height: 24px;
+}
+
+.bad-palette-view {
+	border: 3px solid red !important;
+}
+
+.properties-list {
+	border: 3px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.properties-list th {
+	border: 2px solid black;
+	background-color: lightgrey;
+}
+
+.properties-list td {
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.properties-list tfoot {
+	background-color: #f0f0f0;
+}
+
+.properties-list tfoot > tr > th {
+	border: 1px solid black;
+	background-color: unset;
+}
+
+.parameters-list {
+	width: 100%;
+	display: grid;
+}
+
+.parameters-list div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.parameters-list label {
+	margin: 3px;
+}
+
+.parameters-list-linear {
+	grid-template-columns: 33% 33% 33%;
+	gap: 5px;
+}
+
+.parameters-list-bezier1 {
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 3px;
+}
+
+.parameters-list-bezier2 {
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 2px;
+}
+
+.parameters-tbl {
+	width: 100%;
+	display: table;
+}
+
+.parameters-tbl > div {
+	display: table-row;
+}
+
+.parameters-tbl > div > div {
+	border: 1px solid black;
+	display: table-cell;
+	padding: 3px;
+}
+
+.shift-up {
+	background: url(mv-up.png) no-repeat center top;
+	padding: 0px;
+	border: 0px;
+	width: 32px;
+	height: 32px;
+}
+.shift-up:disabled {
+	background: url(mv-up-no.png) no-repeat center top;
+}
+
+.shift-down {
+	background: url(mv-dn.png) no-repeat center top;
+	padding: 0px;
+	border: 0px;
+	width: 32px;
+	height: 32px;
+}
+.shift-down:disabled {
+	background: url(mv-dn-no.png) no-repeat center top;
+}
+
+.shifter {
+	color: blue;
+	cursor: pointer;
+}
+
+.remover {
+	color: red;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#file-ops {
+	margin: auto;
+	border: 3px solid black;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#file-ops th {
+	border: 3px solid black;
+	background-color: lightgrey;
+}
+
+#file-ops td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.errors-none {
+	color: green;
+	background-color: honeydew;
+}
+
+.errors-some {
+	color: red;
+	background-color: seashell;
+}
+

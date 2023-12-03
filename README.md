@@ -1,4 +1,4 @@
-# Mathematical Palette Generator
+# Mathematical Palette Maker
 This project is a simple yet flexible palette generator for creating palettes for sprite-based graphic design, particularly aimed at pixel spriting platforms such as Aseprite.
 
 The idea is to allow the user to specify and stack dynamic gradients, with the palette shown live as the properties are modified, so that efficient and precise palettes can be computed and generated quickly for use.

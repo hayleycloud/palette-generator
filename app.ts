@@ -41,9 +41,12 @@ function downloadFile(name: string, content: string) {
 }
 
 function downloadAsGPLFile() {
+	const nameEl = <HTMLInputElement> document.getElementById("pal-name");
+	const name = nameEl.value + ".gpl";
+
 	const colors = getColorsFrom(getSamplers());
-	downloadFile("test.gpl", createGPLFile("test.gpl", colors));
-	return false;
+
+	downloadFile(name, createGPLFile(name, colors));
 }
 
 function saveBrowser() {
@@ -647,6 +650,7 @@ function createFileOps(): HTMLTableElement {
 	downloadGPL.type = "button";
 	downloadGPL.id = "download-gpl";
 	downloadGPL.textContent = "Download GPL";
+	downloadGPL.onclick = () => { downloadAsGPLFile(); };
 
 	downloadTD.appendChild(downloadGPL);
 
